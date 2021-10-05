@@ -1,5 +1,4 @@
 #include <iostream>
-#include <conio.h>
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
@@ -54,89 +53,7 @@ protected:
         cout << "    \\___)=(___/" << endl;
     }
 };
-class Thita
-{
-protected:
-    double cos(int deg, char ch = 'b') //I will give you value of cos thita
-    {
-        if (ch == 'a') //For vector addition
-        {
-            if (deg == 0)
-                return (1);
-            else if (deg == 180)
-                return (-1);
-            else if (deg == 90)
-                return (0);
-            if (deg == 30)
-                return (0.8660);
-            else if (deg == 45)
-                return (0.7071);
-            else if (deg == 60)
-                return (0.5);
-            else
-            {
-                cout << "Still in Development process wait for new update";
-            }
-        }
-        else
-        {
-            if (deg >= 90) //We will Give postive thita
-            {
-                deg = 180 - deg;
-                if (deg == 90)
-                    return (0);
-                else if (deg == 0)
-                    return (1);
-                else if (deg == 30)
-                    return (0.8660);
-                else if (deg == 45)
-                    return (0.7071);
-                else if (deg == 60)
-                    return (0.5);
-                else
-                {
-                    cout << "Still in Development process wait for new update";
-                    exit(1);
-                }
-            }
-            else //We will give negative thita
-            {
 
-                if (deg == 180)
-                    return (-1);
-                else if (deg == 30)
-                    return (-0.8660);
-                else if (deg == 45)
-                    return (-0.7071);
-                else if (deg == 60)
-                    return (-0.5);
-                else
-                {
-                    cout << "Still in Development process wait for new update";
-                    exit(1);
-                }
-            }
-        }
-    }
-    double sin(int deg) //I will give you value of sin thita
-    {
-        if (deg == 0 || deg == 180)
-            return 0;
-        else if (deg == 90)
-            return 1;
-        else if (deg == 30)
-            return (0.5);
-        else if (deg == 45)
-            return (0.707);
-        else if (deg == 60)
-            return (0.86602);
-        else
-        {
-            cout << "Error Still in Development  wait for newer version";
-            exit(1);
-        }
-    }
-};
 class Banner //Banners here
 {
 protected:
@@ -164,7 +81,6 @@ protected:
         cout << "\n";
         cout << "\t\tA project by Mr.HH\n";
         cout << "\nPress Enter key Gently...";
-        getch();
         system("cls");
     }
 
@@ -192,7 +108,6 @@ protected:
         cout << "\n";
         cout << "Note :- A and B are Dummy Vector\n";
         cout << "\t\tPress Enter Key To Continue...";
-        getch();
         system("cls");
     }
 
@@ -220,7 +135,6 @@ protected:
         cout << "\n";
         cout << "Note :- A and B are Dummy Vector\n";
         cout << "\t\tPress Enter Key To Continue...";
-        getch();
         system("cls");
     }
 
@@ -248,7 +162,6 @@ protected:
         cout << "\n";
         cout << "Note :- A and B are Dummy Vector\n";
         cout << "\t\tPress Enter Key To Continue...";
-        getch();
         system("cls");
         cout << " _______________________________________________________\n";
         cout << "/                                                       \\ \n";
@@ -296,7 +209,6 @@ protected:
         cout << "\n";
         cout << "Note :- A and B are Dummy Vector\n";
         cout << "\t\tPress Enter Key To Continue...";
-        getch();
         system("cls");
     }
     void indexSelectA() // Vector Substraction Banner
@@ -518,7 +430,6 @@ public:
             outdot(a, b, temp0);
         }
         cout << "\n\nPress Enter key to Gentely...";
-        getch();
     }
 
     void VectCrossProduct() //I will give you value of cross product
@@ -589,12 +500,10 @@ public:
                 {
                     cout << "Invaild Input";
                     cout << "\n\nPress Enter key to Gentely";
-                    getch();
                     system("cls");
                     VectCrossProduct();
                 }
                 cout << "\n\nPress Enter key to Gentely";
-                getch();
                 break;
             case 2:
                 indexSelectC();
@@ -617,7 +526,6 @@ public:
                 {
                     cout << "Invaild input\n";
                     cout << "\t\tPress Enter Key Gently...";
-                    getch();
                     system("cls");
                     VectCrossProduct();
                 }
@@ -628,7 +536,6 @@ public:
         {
             cout << "Invaild Mode\n";
             cout << "\t\tPress Enter Key Gently...";
-            getch();
             system("cls");
             VectCrossProduct();
         }
@@ -662,8 +569,6 @@ public:
             double temp2 = sqrt(2 * a * b * deg1 + temp0);
             outAdd(a, b, temp2);
         }
-        cout << "\n\nPress Enter key to Gentely...";
-        getch();
         system("cls");
     }
 
@@ -696,7 +601,6 @@ public:
             outsubs(a, b, temp2);
         }
         cout << "\n\nPress Enter key to Gentely..";
-        getch();
         system("cls");
     }
 };
