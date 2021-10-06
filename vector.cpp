@@ -379,6 +379,7 @@ protected:
         cout << "                          |__________/                   \n";
         cout << "\n\n>>";
         cin >> temp;
+        
         system("cls");
         return temp;
     }
